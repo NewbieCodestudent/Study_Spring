@@ -1,0 +1,272 @@
+spring01hello
+
+[ 출력시 한글이 깨지지 않도록 하는 방법 ]
+1. web.xml 을 열어서 하단에 필터를 추가해 준다.
+   <filter>
+		<filter-name>xx</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+[ 로그를 출력하는 방법 ]
+1. src/main/java >> package 내 java 파일 클래스 내부에 아래코드를 작성
+   private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+   매소드 내에 logger.info(); 를 작성하고 ()안에 출력하고자 하는 문구를 작성한다.
+   변수를 출력하기 위해서는 logger.info("{}",변수) 와 같이 입력하면 변수가 {}안에 출력된다.
+
+[ URL에 따른 jsp 경로 지정 ]
+* 기본 폼
+@RequestMapping(value = "/home.do", method = RequestMethod.GET)
+public String home(Model model) {
+	logger.info("Welcome home");
+	
+	return "home";
+}
+1. value = "" 안에 URL 경로를 작성해 준다.
+2. method 에는 GET, POST 방식을 정해준다.
+3. 값을 넘겨주기 위해 model.addAttribute("변수명","변수값")을 해주면
+   jsp에서 ${변수명} 으로 변수값을 가져올 수 있다.
+   * Model model은 MemberVO vo 처럼 자신이 만들 클래스를 선언해서 부여할 수 있다.
+4. return 값에는 보내주고자 하는 경로를 작성해 준다.
+   ex) "home", "board/insert", "redirect:/selectAll"
+
+==============================================================================================
+
+spring01Board : 01번 복습하는 코드
+
+==============================================================================================
+
+spring02Component : 어노테이션들
+
+[ 어노테이션 ]
+@Controller : 컨트롤러(프레젠테이션 레이어, 웹 요청과 응답을 처리함)
+@Service : 로직 처리(서비스 레이어, 내부에서 자바 로직을 처리함)
+@Repository : 외부I/O 처리(퍼시스턴스 레이어, DB나 파일같은 외부 I/O 작업을 처리함)
+
+*활 용
+@Controller
+
+@Service
+
+@Repository : 루트 컨테이너 빈 객체로 생성해주는 어노테이션
+DAOimpl 클래스 위에 선언하여 준다.
+
+[ 의존성 어노테이션 ]
+의존성 어노테이션은 컨테이너에 생성된 빈(Bean) 객체를 자동으로 찾아서 오는 어노테이션이다.
+              의존     사용가능 위치                   Bean검색 우선순위    Bean 강제지정
+@Resource  :  Java    필드, 파라미터가 한 개인 setter   이름 > 타입         @Resource(name="ID")
+@Inject    :  Javax   필드, 생성자, setter            타입 > 이름         @Inject
+                                                                    @Named("ID")
+@Autowired :  Spring  필드, 생성자, setter            타입 > 이름        @Autowired
+                                                                    @Qualifier("ID")
+
+* 활용
+@Autowired
+MemberService service;
+작성하면 MemberService를 call 한 것과 같다.
+
+==============================================================================================
+
+spring03createBean
+
+<bean> id="" class=""
+<constructor-arg>
+<property> name="" value=""
+<list>
+<set>
+<map>
+<entry>
+
+
+==============================================================================================
+
+spring04util
+<util>
+
+==============================================================================================
+
+spring05memberBean
+
+==============================================================================================
+
+spring06log4j : 로그를 파일로 생성하는 방법
+
+[ 로그에 날짜를 출력 ]
+1. src/main/resources > log4j.xml를 연다.
+2. <appender name="console" class="org.apache.log4j.ConsoleAppender"> 안에
+   <param name="ConversionPattern" value="%-5p: %c - %m%n" />에서
+   value에 %d{yyyy-MM-dd HH:mm:ss.SSS}를 추가하면 날짜가 출력되고
+   $c뒤에 .$M()를 추가하여 파일경로를 출력할 수 있다.
+   결과물 : <param name="ConversionPattern" value="%-5p: %d{yyyy-MM-dd HH:mm:ss.SSS} %c.%M() - %m%n" />
+
+[ 출력된 로그를 파일로 저장 ]
+1. 날짜를 출력하는 로그 appender 아래에 새로운 appender를 추가
+   <appender name="testLogFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="C:/golfzon/springFramwork/spring06log4j/src/main/webapp/resources/testLogFile.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value=".yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{yyyy-MM-dd HH:mm:ss.SSS} %c.%M() - %m%n" />
+		</layout>
+	</appender>
+2. 맨 하단에 Root Logger에서
+   <appender-ref ref="testLogFile" /> 를 추가한다.
+3. 로그를 출력하고 Package Explorer를 새로고침하면 경로에 파일이 생성되어 있다.
+
+==============================================================================================
+
+spring07junit_test
+
+[ 테스트 클래스 생성 ]
+1. 테스트하고자 하는 클래스 우클릭 >> new >> Junit Test >> 클래스이름Test.java 생성 
+2. org.junit 인식오류가 생기면 >> 프로젝트 우클릭 >> Build Path >> Add Library >> Junit 4
+3. MVN 에서 spring-test를 검색 후 3.0.5 버전 클릭 후
+   Maven 소스 복사 후 pom.xml dependency에 추가
+
+[ 클래스 테스트 하는 방법 ]
+클래스이름Test.java >> Run As >> JUint test를 통해서 클래스를 테스트 할 수 있다.
+클래스이름Test.java를 열어서 안에 있는 메소드에서 우클릭하여 매소드만 테스크 할 수도 있다.
+
+==============================================================================================
+
+spring08jdbc_oracle
+
+[ 오라클 DB 연동을 위한 xml 코드 추가 ]
+1. pom.xml >> properties와 dependencies 사이에 repositories를 넣어준다.
+	<repositories>
+	   <repository>
+	   <id>codelds</id>
+	   <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+	   </repository>
+	</repositories>
+2. MVN 에서 ojdbc6를 검색 후 상단 database.jsbc 접속 후 dependencies에 추가한다.
+	<!-- oracle jdbc -->
+	<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
+	<dependency>
+	   <groupId>com.oracle.database.jdbc</groupId>
+	   <artifactId>ojdbc6</artifactId>
+	   <version>11.2.0.4</version>
+	</dependency>
+
+[ 계정 연동하기 ]
+1. src/main/resources 에 jdbc 생성 후 oracle.properties를 생성
+2. 아래 코드를 작성
+	oracle.DRIVER_NAME=oracle.jdbc.OracleDriver
+	oracle.URL=jdbc:oracle:thin:@localhost:1521:xe
+	oracle.USER=KOSTA
+	oracle.PASSWORD=1234
+* oracle. 은 오라클에서 사용한다는 의미
+* "", ; 같은 기호는 사용할 수 없다.
+3. root-context.xml에서 bean 추가
+   id = "propertyPlaceholderConfigurer"
+   class = "org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+4. bean에 property 와 value 추가
+   "오라클 계정을 생성한 공간"
+	<property name="locations">
+		<value>classpath:jdbc/oracle.properties</value>
+	</property>
+
+[ bean 과 impl 생성 ]
+1. MemberDAOimpl 에서 생성자를 생성하여 값을 받아올 수 있는 준비
+	public MemberDAOimpl(String className, String url, String user, String pw) {
+		logger.info("className:{}",className);
+		logger.info("url:{}",url);
+		logger.info("user:{}",user);
+		logger.info("pw:{}",pw);
+	}
+2. root-context.xml 에서 bean을 등록하여 값을 받는다.
+	<bean id="dao" class="test.com.member.MemberDAOimpl">
+		<constructor-arg>
+			<value>${oracle.DRIVER_NAME}</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>${oracle.URL}</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>${oracle.USER}</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>${oracle.PASSWORD}</value>
+		</constructor-arg>
+	</bean>
+	* constructor 는 생성자의 변수 갯수와 같아야 한다.
+
+==============================================================================================
+
+spring09dbcp : 계정을 객체로 넘겨주는 방법
+
+1. 08번 oracle에서 했던 계정 작업을 먼저 실행하여 계정 연결
+2. mvn에서 commons-dbcp 와 spring-jdbc를 검색하여 아래 코드를 pom.xml dependencies에 추가
+	<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.2.2</version>
+	</dependency>
+		
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>3.2.4.RELEASE</version>
+	</dependency>
+3. MemberDAOimpl에 계정을 가져오는 변수에 BasicDataSource로 변수 설정하여 각 정보를 가져온다.
+4. root-context.xml에서 BasicDataSource를 가져오는 bean 생설
+	<bean id="ds" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${oracle.DRIVER_NAME}"></property>
+		<property name="url" value="${oracle.URL}"></property>
+		<property name="username" value="${oracle.USER}"></property>
+		<property name="password" value="${oracle.PASSWORD}"></property>
+	</bean>
+5. bean을 ref="ds"로 연결
+	<bean id="dao" class="test.com.dbcp.MemberDAOimpl">
+		<constructor-arg ref="ds"></constructor-arg>
+	</bean>
+
+
+
+<!-- BasicDataSource -->
+<dependency>
+<groupId>commons-dbcp</groupId>
+<artifactId>commons-dbcp</artifactId>
+<version>1.2.2</version>
+</dependency>
+
+<!-- JdbcTemplate -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-jdbc</artifactId>
+<version>3.2.4.RELEASE</version>
+</dependency>
+
+<!-- Mybatis -->
+<dependency>
+<groupId>org.mybatis</groupId>
+<artifactId>mybatis-spring</artifactId>
+<version>1.1.1</version>
+</dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
