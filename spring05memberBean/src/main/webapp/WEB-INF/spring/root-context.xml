@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Car, book -->
+	<bean id="car" class="test.com.memeber.Car">
+		<property name="model" value="MBW"></property>
+		<property name="price" value="11111"></property>
+	</bean>
+	
+	<bean id="book" class="test.com.memeber.Book">
+		<property name="title" value="java"></property>
+		<property name="price" value="22222"></property>
+	</bean>
+	
+	<bean id="store" class="test.com.memeber.Store">
+		<property name="car" ref="car"></property>
+		<property name="book" ref="book"></property>
+	</bean>
+	
+	<!-- @configuration-MemberConfiguration pen, note -->
+	
+	<!-- @Repository : Bag, Store -->
+	
+	<!-- logger 확인은 @Repository -->
+	
+	
+</beans>

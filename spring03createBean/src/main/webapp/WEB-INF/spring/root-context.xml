@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- TestBean tb01 = new TestBean(11,22,33); -->
+	<bean id="tb01" class="test.com.createbean.TestBean">
+		<!-- ()의 11를 넣는 방법 -->
+		<constructor-arg>
+			<value>11</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>22</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>33</value>
+		</constructor-arg>
+	</bean>
+	
+	<!-- TestBean tb02 = new TestBean(); -->
+	<bean id="tb02" class="test.com.createbean.TestBean">
+	</bean>
+	
+	<!-- TestBean tb03 = new TestBean_GetSet(); -->
+	<bean id="tb03" class="test.com.createbean.TestBean_GetSet">
+		<!-- name : set값명 / value : 부여하는 값 -->
+		<property name="kor" value="99"></property>
+		<property name="eng" value="99"></property>
+		<property name="math" value="99"></property>	
+	</bean>
+	
+	<!-- mission -->
+	<!-- Car-model,price 생성자빈으로 초기화 -->
+	<bean id="car" class="test.com.createbean.Car">
+		<constructor-arg><value>BMW</value></constructor-arg>
+		<constructor-arg><value>1000</value></constructor-arg>
+	</bean>
+	
+	<!-- Book-title,price  세터빈으로 초기화 -->
+	<bean id="book" class="test.com.createbean.Book">
+		<property name="title" value="test_title"></property>
+		<property name="price" value="100"></property>
+	</bean>
+	
+	<!-- class안에 class를 넣는 방법  -->
+	<!-- Store - Car, Book -->
+	<!-- Store store = new Store(new Car("Ray",1000), new Book("JAVA",500)) -->
+	<bean id="store" class="test.com.createbean.Store">
+		<constructor-arg ref="car"></constructor-arg>
+		<constructor-arg ref="book"></constructor-arg>
+	</bean>
+	
+	<bean id="store2" class="test.com.createbean.Store2">
+		<property name="car" ref="car"></property>
+		<property name="book" ref="book"></property>
+	</bean>
+	
+	
+	<!-- mission -->
+	<!-- Bag - note(model, size), pen(color, price) 생성자빈-->
+	<!-- Bag2 - note(model, size), pen(color, price) 세터빈 -->
+	<bean id="note" class="test.com.createbean.Note">
+		<constructor-arg><value>Note2</value></constructor-arg>
+		<constructor-arg><value>1000</value></constructor-arg>
+	</bean>
+	<bean id="pen" class="test.com.createbean.Pen">
+		<constructor-arg><value>ForestGreen</value></constructor-arg>
+		<constructor-arg><value>300</value></constructor-arg>
+	</bean>
+	
+	<bean id="bag" class="test.com.createbean.Bag">
+		<constructor-arg ref="note"></constructor-arg>
+		<constructor-arg ref="pen"></constructor-arg>
+	</bean>
+	
+	<bean id="bag2" class="test.com.createbean.Bag2">
+		<property name="note" ref="note"></property>
+		<property name="pen" ref="pen"></property>
+	</bean>
+	
+	<!-- List names = new ArrayList();
+	names.add("kim1");
+	names.add("kim1");
+	names.add("kim1");
+	names.add("kim1");
+	new Test Bean4(names); -->
+	<bean id="tb04" class="test.com.createbean.TestBean4">
+		<constructor-arg>
+			<list>
+				<value>kim1</value>
+				<value>kim2</value>
+				<value>kim3</value>
+				<value>kim4</value>
+				<value>kim4</value>
+				<value>kim4</value>
+				<value>kim4</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<!-- set 방식 -->
+	<!-- set은 중복을 처리해여 준다. -->
+	<bean id="tb05" class="test.com.createbean.TestBean5">
+		<constructor-arg>
+			<set>
+				<value>kim1</value>
+				<value>kim2</value>
+				<value>kim2</value>
+				<value>kim1</value>
+				<value>kim1</value>
+				<value>kim3</value>
+				<value>kim4</value>
+			</set>
+		</constructor-arg>
+	</bean>
+	
+	<!-- map방식 -->
+	<bean id="tb06" class="test.com.createbean.TestBean6">
+		<constructor-arg>
+			<map>
+				<entry key="name">
+					<value>kim1</value>
+				</entry>
+				<entry key="age">
+					<value>33세</value>
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<!-- mission -->
+	<!-- TestBean7,8,9 GetSet으로 출력 -->
+	<bean id="tb07" class="test.com.createbean.TestBean7">
+		<property name="tb07" ref="tb04"></property>	
+	</bean>	
+	<bean id="tb08" class="test.com.createbean.TestBean8">
+		<property name="tb08" ref="tb05"></property>
+	</bean>
+	<bean id="tb09" class="test.com.createbean.TestBean9">
+		<property name="tb09" ref="tb06"></property>
+	</bean>
+		
+</beans>

@@ -1,0 +1,4 @@
+INFO : 2022-10-14 17:32:25.237 test.com.testlog.HomeController.home() - Welcome home! The client locale is ko_KR.
+INFO : 2022-10-14 17:32:26.158 test.com.testlog.HomeController.home() - Welcome home! The client locale is ko_KR.
+INFO : 2022-10-11 17:32:50.599 test.com.testlog.HomeController.home() - Welcome home! The client locale is ko_KR.
+INFO : 2022-10-11 17:32:51.129 test.com.testlog.HomeController.home() - Welcome home! The client locale is ko_KR.

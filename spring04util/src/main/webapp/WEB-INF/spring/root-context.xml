@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<util:list id="names_list">
+		<value>kim1</value>
+		<value>kim2</value>
+		<value>kim3</value>
+		<value>kim4</value>
+		<value>kim5</value>
+	</util:list>
+	<util:set id="names_set">
+		<value>lee1</value>
+		<value>lee2</value>
+		<value>lee3</value>
+		<value>lee4</value>
+		<value>lee5</value>
+	</util:set>
+	<util:map id="info_map">
+		<entry key="name">
+			<value>yang</value>
+		</entry>
+		<entry key="age">
+			<value>33</value>
+		</entry>
+	</util:map>
+	
+	<bean id="tb04" class="test.com.createutil.TestBean4">
+		<constructor-arg ref="names_list"></constructor-arg>
+	</bean>
+	<bean id="tb05" class="test.com.createutil.TestBean5">
+		<constructor-arg ref="names_set"></constructor-arg>
+	</bean>
+	<bean id="tb06" class="test.com.createutil.TestBean6">
+		<constructor-arg ref="info_map"></constructor-arg>
+	</bean>
+	
+	<util:constant id="max_value" static-field="java.lang.Integer.MAX_VALUE"/>
+	<util:constant id="count" static-field="test.com.createutil.TestUtillContant"/>
+
+	<bean id="testCon" class="test.com.createutil.TestUtillContant">
+		<constructor-arg ref="max_value"></constructor-arg>
+		<constructor-arg ref="count"></constructor-arg>
+	</bean>
+		
+</beans>

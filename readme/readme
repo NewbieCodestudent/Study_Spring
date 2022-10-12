@@ -230,6 +230,16 @@ spring09dbcp : 계정을 객체로 넘겨주는 방법
 		<constructor-arg ref="ds"></constructor-arg>
 	</bean>
 
+[ jdbcTempate 연결하는 방법 ]
+1. root-context.xml에 jdbcTempate bean을 추가
+	<bean id="jdbcTempate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ds"></property>
+	</bean>
+2. dao bean 주석처리
+3. impl에서 class에 @Repository를 선언 하고 @Autowired로 JdbcTamplate를 가져온다.
+4. 매소드를 생성하여 logger.info로 jdbcTemplate를 찍고 컨트롤러에 찍어서 넘어오는지 확인한다.
+	
+
 
 
 <!-- BasicDataSource -->
@@ -260,7 +270,7 @@ spring09dbcp : 계정을 객체로 넘겨주는 방법
 
 
 
-
+test
 
 
 

@@ -1,0 +1,802 @@
+INFO : 2022-10-12 09:13:17.629 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 09:13:17.774 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 09:13:17 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 09:13:17.849 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 09:13:18.104 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ddc8fc: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 09:13:18.107 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 475 ms
+INFO : 2022-10-12 09:13:18.154 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 09:13:18.159 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 09:13:18 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 09:13:18.159 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 09:13:18.685 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 09:13:18.688 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 09:13:18.814 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 09:13:18.819 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d41bb5a: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1ddc8fc
+INFO : 2022-10-12 09:13:18.919 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 09:13:19.087 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 09:13:19.127 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 972 ms
+INFO : 2022-10-12 09:13:19.670 test.com.junit.HomeController.home() - Welcome home! The client locale is ko_KR.
+INFO : 2022-10-12 09:24:50.221 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 09:13:18 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 09:24:50.222 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d41bb5a: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1ddc8fc
+INFO : 2022-10-12 09:24:50.229 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 09:13:17 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 09:24:50.229 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ddc8fc: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 09:24:50.919 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 09:24:51.025 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 09:24:51 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 09:24:51.095 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 09:24:51.407 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78464c06: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 09:24:51.410 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 489 ms
+INFO : 2022-10-12 09:24:51.455 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 09:24:51.459 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 09:24:51 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 09:24:51.460 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 09:24:51.842 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 09:24:51.844 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 09:24:51.965 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 09:24:51.971 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@24206523: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@78464c06
+INFO : 2022-10-12 09:24:52.076 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 09:24:52.254 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 09:24:52.295 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 839 ms
+INFO : 2022-10-12 11:06:59.099 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 09:24:51 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:06:59.101 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@24206523: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@78464c06
+INFO : 2022-10-12 11:06:59.102 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 09:24:51 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:06:59.102 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78464c06: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:06:59.785 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:06:59.879 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:06:59 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:06:59.946 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:07:00.292 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a701880: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:07:00.295 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 508 ms
+INFO : 2022-10-12 11:07:00.336 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:07:00.340 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:07:00 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:07:00.341 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:07:01.895 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:07:01.897 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+WARN : 2022-10-12 11:07:01.938 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:07:01.941 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:07:01.942 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:07:01.943 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO : 2022-10-12 11:07:02.048 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:07:02.053 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44276782: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6a701880
+INFO : 2022-10-12 11:07:02.163 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:07:02.164 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:07:02.165 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:07:02.165 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:07:02.329 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:07:02.373 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 2036 ms
+INFO : 2022-10-12 11:08:30.177 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:07:00 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:08:30.177 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44276782: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6a701880
+INFO : 2022-10-12 11:08:30.178 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:06:59 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:08:30.178 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a701880: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:08:30.808 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:08:30.926 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:08:30 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:08:30.999 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:08:31.334 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22d26dbb: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:08:31.341 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 530 ms
+INFO : 2022-10-12 11:08:31.448 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:08:31.458 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:08:31 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:08:31.474 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:08:31.939 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:08:31.941 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+WARN : 2022-10-12 11:08:31.984 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:08:31.986 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:08:31.987 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:08:31.988 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.Test
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO : 2022-10-12 11:08:32.075 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:08:32.082 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e05729e: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@22d26dbb
+INFO : 2022-10-12 11:08:32.177 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:08:32.178 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:08:32.179 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:08:32.179 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:08:32.354 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:08:32.473 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 1024 ms
+INFO : 2022-10-12 11:08:43.081 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:08:31 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:08:43.081 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e05729e: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@22d26dbb
+INFO : 2022-10-12 11:08:43.082 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:08:30 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:08:43.082 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22d26dbb: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:08:43.713 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:08:43.804 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:08:43 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:08:43.868 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:08:44.603 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b0d4fd2: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:08:44.605 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 890 ms
+INFO : 2022-10-12 11:08:44.647 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:08:44.651 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:08:44 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:08:44.652 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:08:44.990 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:08:44.992 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 11:08:45.112 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:08:45.117 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@159bb15c: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b0d4fd2
+INFO : 2022-10-12 11:08:45.224 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:08:45.225 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:08:45.225 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:08:45.226 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:08:45.373 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:08:45.418 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 770 ms
+INFO : 2022-10-12 11:09:07.194 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:08:44 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:09:07.194 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@159bb15c: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b0d4fd2
+INFO : 2022-10-12 11:09:07.196 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:08:43 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:09:07.196 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b0d4fd2: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:09:07.798 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:09:07.891 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:09:07 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:09:07.957 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:09:08.185 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ae6a6e9: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:09:08.188 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 388 ms
+INFO : 2022-10-12 11:09:08.229 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:09:08.232 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:09:08 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:09:08.233 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:09:08.583 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:09:08.585 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 11:09:08.702 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:09:08.707 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22e11087: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4ae6a6e9
+INFO : 2022-10-12 11:09:08.802 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:09:08.803 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:09:08.803 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:09:08.803 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:09:08.940 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:09:08.980 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 751 ms
+INFO : 2022-10-12 11:09:52.607 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:09:08 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:09:52.608 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22e11087: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4ae6a6e9
+INFO : 2022-10-12 11:09:52.609 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:09:07 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:09:52.609 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ae6a6e9: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:09:53.253 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:09:53.348 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:09:53 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:09:53.425 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:09:53.645 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b77fd59: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:09:53.648 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 394 ms
+INFO : 2022-10-12 11:09:53.687 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:09:53.691 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:09:53 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:09:53.692 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:09:54.066 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:09:54.068 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 11:09:54.206 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:09:54.211 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@733ca2b0: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b77fd59
+INFO : 2022-10-12 11:09:54.316 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:09:54.316 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:09:54.316 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:09:54.316 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:09:54.466 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:09:54.505 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 817 ms
+INFO : 2022-10-12 11:11:33.356 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:09:53 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:11:33.356 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@733ca2b0: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b77fd59
+INFO : 2022-10-12 11:11:33.357 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:09:53 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:11:33.357 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b77fd59: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:11:33.987 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:11:34.089 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:11:34 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:11:34.163 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:11:34.378 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fdd9804: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:11:34.380 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 390 ms
+INFO : 2022-10-12 11:11:34.418 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:11:34.422 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:11:34 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:11:34.423 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:11:34.853 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:11:34.855 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+WARN : 2022-10-12 11:11:34.891 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: org.junit.runner.RunWith
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN : 2022-10-12 11:11:34.892 org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.logNonFatalException() - Failed to classload type while reading annotation metadata. This is a non-fatal error, but certain annotation metadata may be unavailable.
+java.lang.ClassNotFoundException: ContextConfiguration
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+	at org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:167)
+	at org.springframework.asm.ClassReader.a(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:237)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:242)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1164)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1117)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1010)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4957)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5264)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:311)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5613)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO : 2022-10-12 11:11:34.977 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:11:34.983 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1533d071: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4fdd9804
+INFO : 2022-10-12 11:11:35.086 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:11:35.231 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:11:35.266 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 847 ms
+INFO : 2022-10-12 11:13:02.728 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:11:34 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:13:02.732 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1533d071: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4fdd9804
+INFO : 2022-10-12 11:13:02.738 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:11:34 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:13:02.739 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fdd9804: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:13:03.395 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:13:03.495 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:13:03 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:13:03.562 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:13:03.757 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@224aaca4: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:13:03.760 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 363 ms
+INFO : 2022-10-12 11:13:03.801 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:13:03.805 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:13:03 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:13:03.806 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:13:04.139 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:13:04.141 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 11:13:04.264 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:13:04.268 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b24111f: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@224aaca4
+INFO : 2022-10-12 11:13:04.377 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:13:04.378 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:13:04.379 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:13:04.379 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:13:04.523 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:13:04.564 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 763 ms
+INFO : 2022-10-12 11:16:11.965 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:13:03 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:16:11.965 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b24111f: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@224aaca4
+INFO : 2022-10-12 11:16:11.966 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:13:03 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:16:11.966 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@224aaca4: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:16:12.788 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization started
+INFO : 2022-10-12 11:16:12.914 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing Root WebApplicationContext: startup date [Wed Oct 12 11:16:12 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:16:12.996 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+INFO : 2022-10-12 11:16:13.212 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@76653f57: defining beans []; root of factory hierarchy
+INFO : 2022-10-12 11:16:13.214 org.springframework.web.context.ContextLoader.initWebApplicationContext() - Root WebApplicationContext: initialization completed in 423 ms
+INFO : 2022-10-12 11:16:13.255 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization started
+INFO : 2022-10-12 11:16:13.259 org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh() - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:16:13 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:16:13.259 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions() - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+INFO : 2022-10-12 11:16:13.706 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO : 2022-10-12 11:16:13.707 org.springframework.context.annotation.ClassPathBeanDefinitionScanner.registerDefaultFilters() - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO : 2022-10-12 11:16:13.838 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>() - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : 2022-10-12 11:16:13.844 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons() - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2e2992ee: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@76653f57
+INFO : 2022-10-12 11:16:13.959 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.HomeController.home(java.util.Locale,org.springframework.ui.Model)
+INFO : 2022-10-12 11:16:13.960 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/update.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.update()
+INFO : 2022-10-12 11:16:13.960 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/delete.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.delete()
+INFO : 2022-10-12 11:16:13.960 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod() - Mapped "{[/insert.do],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String test.com.junit.MemberController.insert()
+INFO : 2022-10-12 11:16:14.114 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler() - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO : 2022-10-12 11:16:14.157 org.springframework.web.servlet.DispatcherServlet.initServletBean() - FrameworkServlet 'appServlet': initialization completed in 902 ms
+INFO : 2022-10-12 11:19:50.968 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Oct 12 11:16:13 KST 2022]; parent: Root WebApplicationContext
+INFO : 2022-10-12 11:19:50.975 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2e2992ee: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,homeController,memberController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@76653f57
+INFO : 2022-10-12 11:19:50.981 org.springframework.web.context.support.XmlWebApplicationContext.doClose() - Closing Root WebApplicationContext: startup date [Wed Oct 12 11:16:12 KST 2022]; root of context hierarchy
+INFO : 2022-10-12 11:19:50.982 org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons() - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@76653f57: defining beans []; root of factory hierarchy
