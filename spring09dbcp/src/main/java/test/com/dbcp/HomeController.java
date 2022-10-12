@@ -2,6 +2,7 @@ package test.com.dbcp;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -51,7 +52,10 @@ public class HomeController {
 	@RequestMapping(value = "/selectAll", method = RequestMethod.GET)
 	public String selectAll(Locale locale, Model model) {
 		logger.info("selectAll()...");
-		logger.info("result:{}", dao.selectAll().size());
+		List<MemberVO> vos = dao.selectAll();
+		logger.info("result:{}", vos.size());
+		
+		model.addAttribute("vos", vos);
 		
 		return "member/selectAll";
 	}

@@ -40,8 +40,14 @@ public class MemberDAOimpl {
 		List<MemberVO> vos = jdbcTemplate.query("select * from member oreder by num desc", new Object[] {}, new RowMapper<MemberVO>() {
 			@Override
 			public MemberVO mapRow(ResultSet rs, int rowNum) throws SQLException {
-				// TODO Auto-generated method stub
-				return null;
+				logger.info("mapRow()...{}",rowNum);
+				MemberVO vo = new MemberVO();
+				vo.setNum(rs.getInt("num"));
+				vo.setId(rs.getString("id"));
+				vo.setPw(rs.getString("pw"));
+				vo.setName(rs.getString("name"));
+				vo.setTel(rs.getString("tel"));
+				return vo;
 			}
 		});
 		
