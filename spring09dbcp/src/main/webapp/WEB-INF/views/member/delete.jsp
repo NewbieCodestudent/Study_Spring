@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="home">home</a>
+<a href="selectAll">selectAll</a>
+<a href="selectOne?num=${param.num}">selectOne</a>
+<h1>delete.jsp</h1>
+<h2>${param.num}번 삭제</h2>
+<h3>정말 삭제하시겠습니까?</h3>
+<ul>
+	<li><a href="deleteOK?num=${param.num}">삭 제</a></li>
+	<li><a href="selectOne?num=${param.num}">취 소</a></li>
+</ul>
+
+</body>
+</html>
